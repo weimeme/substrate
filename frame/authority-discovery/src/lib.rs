@@ -16,9 +16,7 @@
 // limitations under the License.
 
 //! # Authority discovery pallet.
-//!
-//! This pallet is used by the `client/authority-discovery` and by polkadot's parachain logic
-//! to retrieve the current and the next set of authorities.
+//! 该 pallet 被 `client/authority-discovery` 和波卡的平行链逻辑使用，用于检索当前和下一个验证人集。
 
 // Ensure we're `no_std` when compiling for Wasm.
 #![cfg_attr(not(feature = "std"), no_std)]

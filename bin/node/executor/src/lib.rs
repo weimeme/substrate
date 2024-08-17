@@ -15,13 +15,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-//! A `CodeExecutor` specialization which uses natively compiled runtime when the wasm to be
-//! executed is equivalent to the natively compiled code.
+//! 当要执行的 wasm 与本地编译的代码等价时，`CodeExecutor` 的一种特化实现，使用本地编译的运行时。
 
 pub use sc_executor::NativeElseWasmExecutor;
 
-// Declare an instance of the native executor named `ExecutorDispatch`. Include the wasm binary as
-// the equivalent wasm code.
+// 声明一个名为 `ExecutorDispatch` 的本地执行器实例。包含与之等价的 wasm 二进制代码作为 wasm 代码。
 pub struct ExecutorDispatch;
 
 impl sc_executor::NativeExecutionDispatch for ExecutorDispatch {
